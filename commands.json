@@ -1,0 +1,139 @@
+{
+    "help": {
+        "description": "Отображение данной справки."
+    },
+    "add": {
+        "description": "Добавление записи в таблицу вспомогательной базы данных.",
+        "args": [
+            {
+                "description": "название алгоритма",
+                "required": true
+            },
+            {
+                "description": "тип объекта защиты",
+                "possible_values": ["file", "table"],
+                "required": true
+            },
+            {
+                "description": "путь к файлу/название таблицы",
+                "required": true
+            },
+            {
+                "description": "поле первичного ключа (для таблицы БД)",
+                "required": false
+            },
+            {
+                "description": "отслеживать изменения",
+                "possible_values": ["watch"],
+                "required": false
+            },
+            {
+                "description": "создать резервную копию",
+                "possible_values": ["backup"],
+                "required": false
+            }
+        ]
+    },
+    "check": {
+        "description": "Проверка целостности объекта защиты.",
+        "args": [
+            {
+                "description": "тип объекта защиты",
+                "possible_values": ["file", "table"],
+                "required": true
+            },
+            {
+                "description": "путь к файлу/название таблицы",
+                "required": true
+            }
+        ]
+    },
+    "db_connect": {
+        "description": "Соединение с защищаемой базой данных.",
+        "args": [
+            {
+                "description": "хост",
+                "required": true
+            },
+            {
+                "description": "порт",
+                "required": true
+            },
+            {
+                "description": "название базы данных",
+                "required": true
+            },
+            {
+                "description": "пользователь",
+                "required": true
+            },
+            {
+                "description": "пароль",
+                "required": true
+            },
+            {
+                "description": "СУБД",
+                "required": false,
+                "possible_values": ["postgresql", "mysql"]
+            }
+        ]
+    },
+    "full_check": {
+        "description": "Полная проверка (для файла дополнительно проверяет размер, для таблицы - число записей).",
+        "args": [
+            {
+                "description": "тип объекта защиты",
+                "possible_values": ["file", "table"],
+                "required": true
+            },
+            {
+                "description": "путь к файлу/название таблицы",
+                "required": true
+            }
+        ]
+    },
+    "list_algorithms": {
+        "description": "Вывод списка доступных алгоритмов."
+    },
+    "list_incorrect": {
+        "description": "Вывод списка объектов защиты с нарушением целостности.",
+        "args": [
+            {
+                "description": "тип объектов защиты",
+                "possible_values": ["files", "tables"],
+                "required": true
+            }
+        ]
+    },
+    "remove": {
+        "description": "Удаление записи об объекте защиты из таблицы вспомогательной базы данных",
+        "args": [
+            {
+                "description": "тип объекта защиты",
+                "possible_values": ["file", "table"],
+                "required": true
+            },
+            {
+                "description": "путь к файлу/название таблицы",
+                "required": true
+            }
+        ]
+    },
+    "restore": {
+        "description": "Восстановление объекта из резервной копии",
+        "args": [
+            {
+                "description": "тип объекта защиты",
+                "possible_values": ["file", "table"],
+                "required": true
+            },
+            {
+                "description": "путь к файлу/название таблицы",
+                "required": true
+            }
+        ]
+    },
+    "exit": {
+        "description": "Выход из программы."
+    }
+}

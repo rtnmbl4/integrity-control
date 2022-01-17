@@ -1,0 +1,12 @@
+### Библиотека обеспечения целостности
+crc64iso
+PyGOST
+SQLAlchemy
+watchdog
+# Драйвера баз данных для SQLAlchemy
+psycopg2-binary
+PyMySQL
+### Предметно-ориентированный язык
+tabulate
+### Графический интерфейс
+PyQt5

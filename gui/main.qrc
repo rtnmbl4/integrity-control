@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="svgIcon">
+    <file>delete.svg</file>
+    <file>trash.svg</file>
+    <file>refresh-cw.svg</file>
+    <file>plus-circle.svg</file>
+    <file>check-circle.svg</file>
+    <file>slash.svg</file>
+    <file>database.svg</file>
+    <file>folder.svg</file>
+    <file>help-circle.svg</file>
+    <file>play.svg</file>
+    <file>save.svg</file>
+  </qresource>
+</RCC>
